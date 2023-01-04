@@ -9,7 +9,7 @@ const taskRouter = express.Router()
 taskRouter.post("/create",isAuthenticatedUser, createTasks)
 
 // get all tasks
-taskRouter.get("/alltasks",isAuthenticatedUser, getTasks)
+taskRouter.get("/alltasks", getTasks)
 
 module.exports = {
     taskRouter
